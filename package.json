@@ -1,12 +1,13 @@
 {
     "name": "vue-tiu-ui",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "description": "Vue UI组件框架",
     "author": "jelf <okxiaoliang4@gmail.com>",
     "main": "index.js",
+    "private": false,
     "repository": {
         "type": "git",
-        "url": "https://github.com/e8wow"
+        "url": "https://github.com/e8wow/vue-tiu-ui"
     },
     "scripts": {
         "dev": "node build/dev-server.js",
@@ -15,10 +16,6 @@
         "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
         "test": "npm run unit",
         "lint": "eslint --ext .js,.vue src test/unit/specs"
-    },
-    "dependencies": {
-        "vue": "^2.4.2",
-        "vue-router": "^2.7.0"
     },
     "devDependencies": {
         "autoprefixer": "^7.1.2",
@@ -78,6 +75,8 @@
         "sinon": "^4.0.0",
         "sinon-chai": "^2.8.0",
         "url-loader": "^0.5.8",
+        "vue": "^2.4.2",
+        "vue-router": "^2.7.0",
         "vue-loader": "^13.0.4",
         "vue-style-loader": "^3.0.1",
         "vue-template-compiler": "^2.4.2",

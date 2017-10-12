@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { Flex, FlexItem } from '../components/flex'
+import { Flex, FlexItem } from '../components/flexbox'
 
 export default {
     components: {Flex, FlexItem}

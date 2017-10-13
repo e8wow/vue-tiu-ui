@@ -1,17 +1,17 @@
 <template>
     <div>
         <button @click="show = !show">测试</button>
-        <tiu-dialog :show="show" @change="change">
+        <t-dialog :show="show" @change="change">
             <div>123</div>
-        </tiu-dialog>
+        </t-dialog>
     </div>
 </template>
 
 <script>
-import TiuDialog from '../components/dialog/tiu-dialog.vue'
+import TDialog from '../components/t-dialog/index.vue'
 
 export default {
-    components: {TiuDialog},
+    components: {TDialog},
     data () {
         return {
             show: false

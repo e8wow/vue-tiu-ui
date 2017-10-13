@@ -20,6 +20,14 @@ export default new Router({
             meta: {
                 title: 'flexBox'
             }
+        }, {
+            path: 'dialog',
+            component: (resolve) => {
+                require(['../demo/dialog.vue'], resolve)
+            },
+            meta: {
+                title: 'dialog'
+            }
         }]
     }],
     mode: 'history',

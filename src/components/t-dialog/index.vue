@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: 'tiu-dialog',
+    name: 't-dialog',
     model: {
         prop: 'show',
         event: 'change'

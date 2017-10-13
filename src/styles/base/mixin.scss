@@ -1,0 +1,26 @@
+@mixin v-center() {
+    // 垂直居中
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+@mixin h-center() {
+    // 水平居中
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+@mixin center() {
+    @include v-center;
+    @include h-center;
+}
+
+@mixin lines-over-flow($lines) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

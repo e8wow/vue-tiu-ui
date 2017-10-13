@@ -14,7 +14,3 @@ export default {
     components: {Flex, FlexItem}
 }
 </script>
-
-<style lang="scss">
-
-</style>

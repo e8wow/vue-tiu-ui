@@ -1,21 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import App from '../App.vue'
+import index from '../demo/index.vue'
 
 Vue.use(Router)
 
 export default new Router({
     routes: [{
-        path: '/',
-        component: App,
+        path: '/demo',
+        component: index,
         meta: {
             title: 'vue-tiu-ui'
         },
         children: [{
             path: 'flex',
             component: (resolve) => {
-                require(['../page/flex.vue'], resolve)
+                require(['../demo/flex.vue'], resolve)
             },
             meta: {
                 title: 'flexBox'

@@ -1,5 +1,5 @@
 <template>
-    <div class="j-flexbox-item" :style="style">
+    <div class="tiu-flexbox-item" :style="style">
         <slot></slot>
     </div>
 </template>

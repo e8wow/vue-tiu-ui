@@ -1,6 +1,7 @@
 <template>
-    <div class="j-flexbox"
-         :class="{'j-flexbox-col': orient === 'vertical', 'j-flexbox-row': orient === 'horizontal'}" :style="styles">
+    <div class="tiu-flexbox"
+         :class="{'tiu-flexbox-col': orient === 'vertical', 'tiu-flexbox-row': orient === 'horizontal'}"
+         :style="styles">
         <slot></slot>
     </div>
 </template>
@@ -41,20 +42,20 @@ export default {
 </script>
 
 <style lang="scss">
-    .j-flexbox {
+    .tiu-flexbox {
         display: flex;
         width: 100%;
         align-items: center;
-        &.j-flexbox-col {
+        &.tiu-flexbox-col {
             flex-direction: column;
-            > .j-flexbox-item {
+            > .tiu-flexbox-item {
                 width: 100%;
             }
         }
-        &.j-flexbox-row {
+        &.tiu-flexbox-row {
             flex-direction: row;
         }
-        .j-flexbox-item {
+        .tiu-flexbox-item {
             flex: 1;
             &:first-child {
                 margin-top: 0 !important;

@@ -2,6 +2,7 @@
     <div>
         <button @click="show = !show">测试弹窗</button>
         <alert v-model="show" title="Tip" content="username is undefined" button-text="ok"></alert>
+        <button @click="plugin">测试插件弹窗</button>
     </div>
 </template>
 
@@ -16,6 +17,12 @@ export default {
         }
     },
     methods: {
+        plugin () {
+            this.$tiu.alert.show({
+                title: '提示',
+                content: '用户名为空'
+            })
+        }
     }
 }
 </script>

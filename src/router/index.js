@@ -21,9 +21,17 @@ export default new Router({
             title: 'alert'
         }
     }, {
+        path: '/button',
+        component: (resolve) => {
+            require(['../demo/t-button.vue'], resolve)
+        },
+        meta: {
+            title: 'button'
+        }
+    }, {
         path: '/dialog',
         component: (resolve) => {
-            require(['../demo/dialog.vue'], resolve)
+            require(['../demo/t-dialog.vue'], resolve)
         },
         meta: {
             title: 'dialog'

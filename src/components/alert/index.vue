@@ -58,7 +58,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-    @import "../../styles/tips/tiu-alert";
-</style>

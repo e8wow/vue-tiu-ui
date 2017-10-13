@@ -1,0 +1,31 @@
+@import "../base/base";
+
+button.tiu-button {
+    -webkit-appearance: none;
+    border-width: 0;
+    width: 100%;
+    outline: 0;
+}
+
+.tiu-button {
+    line-height: 2.5;
+    font-size: 1em;
+}
+
+.tiu-button-default {
+    background-color: $tiu-button-default;
+    color: $theme-color;
+    &:active {
+        background-color: $tiu-button-default-active;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.tiu-button-primary {
+    background-color: $tiu-button-primary;
+    color: #fff;
+    &:active {
+        background-color: $tiu-button-primary-active;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}

@@ -1,5 +1,12 @@
 @import "theme";
 
+/* button */
+$tiu-button-default: #d9d9d9;
+$tiu-button-default-active: #dfdfdf;
+$tiu-button-primary: $theme-color;
+$tiu-button-primary-active: #ec5e2a;
+$tiu-button-delete: #dd2B2B;
+
 /* dialog */
 $tiu-dialog-background-color: #fff;
 $tiu-dialog-horizontal-padding: 1.6em;

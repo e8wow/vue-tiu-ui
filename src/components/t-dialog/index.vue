@@ -60,6 +60,6 @@ export default {
 
 <style lang="scss">
     @import "../../styles/transition";
-    @import "../../styles/tips/tiu-mask";
-    @import "../../styles/tips/tiu-dialog";
+    @import "../../styles/tiu-tips/tiu-mask";
+    @import "../../styles/tiu-tips/tiu-dialog";
 </style>

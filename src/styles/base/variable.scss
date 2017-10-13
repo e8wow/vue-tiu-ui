@@ -1,1 +1,9 @@
 @import "theme";
+
+/* dialog */
+$tiu-dialog-background-color: #fff;
+$tiu-dialog-horizontal-padding: 1.6em;
+$tiu-dialog-button-text-default: #999;
+$tiu-dialog-button-text-primary: $theme-color;
+$tiu-dialog-button-border: #ddd;
+$tiu-dialog-button-active: #f6f6f6;

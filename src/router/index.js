@@ -7,28 +7,35 @@ Vue.use(Router)
 
 export default new Router({
     routes: [{
-        path: '/demo',
+        path: '/',
         component: index,
         meta: {
             title: 'vue-tiu-ui'
+        }
+    }, {
+        path: '/alert',
+        component: (resolve) => {
+            require(['../demo/alert.vue'], resolve)
         },
-        children: [{
-            path: 'flex',
-            component: (resolve) => {
-                require(['../demo/flex.vue'], resolve)
-            },
-            meta: {
-                title: 'flexBox'
-            }
-        }, {
-            path: 'dialog',
-            component: (resolve) => {
-                require(['../demo/dialog.vue'], resolve)
-            },
-            meta: {
-                title: 'dialog'
-            }
-        }]
+        meta: {
+            title: 'alert'
+        }
+    }, {
+        path: '/dialog',
+        component: (resolve) => {
+            require(['../demo/dialog.vue'], resolve)
+        },
+        meta: {
+            title: 'dialog'
+        }
+    }, {
+        path: '/flexbox',
+        component: (resolve) => {
+            require(['../demo/flexbox.vue'], resolve)
+        },
+        meta: {
+            title: 'flexBox'
+        }
     }],
     mode: 'history',
     scrollBehavior (to, from, savedPosition) {

@@ -1,9 +1,47 @@
 @import "../base/base";
 
 .tiu-dialog {
+    background-color: $tiu-dialog-background-color;
     transform: translate(-50%, -50%);
+    border-radius: 0.2em;
+    text-align: center;
+    overflow: hidden;
     position: fixed;
     z-index: 5000;
+    width: 80%;
     left: 50%;
     top: 50%;
+}
+
+.tiu-dialog-hd {
+    padding: 1.2em $tiu-dialog-horizontal-padding 0.5em;
+    font-size: 1.2em;
+}
+
+.tiu-dialog-bd {
+    padding: 0 $tiu-dialog-horizontal-padding 0.5em;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.4em;
+    min-height: 2.4em;
+    color: #808080;
+}
+
+.tiu-dialog-ft {
+    line-height: 2.5em;
+}
+
+.tiu-dialog-btn {
+    border-top:1px solid $tiu-dialog-button-border;
+    &:active{
+        background-color: $tiu-dialog-button-active;
+    }
+}
+
+.tiu-dialog-btn-default {
+    color: $tiu-dialog-button-text-default;
+}
+
+.tiu-dialog-btn-primary {
+    color: $tiu-dialog-button-text-primary;
 }

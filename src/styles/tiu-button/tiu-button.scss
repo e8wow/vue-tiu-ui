@@ -8,16 +8,18 @@ button.tiu-button {
 }
 
 .tiu-button {
-    line-height: 2.5;
+    position: relative;
+    overflow: hidden;
+    line-height: 3;
     font-size: 1em;
 }
 
 .tiu-button-default {
-    background-color: $tiu-button-default;
+    background-color: #f8f8f8;
     color: $theme-color;
     &:active {
         background-color: $tiu-button-default-active;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(249, 90, 41, 0.5);
     }
 }
 
@@ -26,6 +28,15 @@ button.tiu-button {
     color: #fff;
     &:active {
         background-color: $tiu-button-primary-active;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.tiu-button-delete {
+    background-color: $tiu-button-delete;
+    color: #fff;
+    &:active {
+        background-color: $tiu-button-delete-active;
         color: rgba(255, 255, 255, 0.5);
     }
 }

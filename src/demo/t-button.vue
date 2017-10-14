@@ -1,7 +1,8 @@
 <template>
     <div>
-        <t-button>确定</t-button>
-        <t-button type="primary">确定</t-button>
+        <t-button style="margin-top: 10px;">确定</t-button>
+        <t-button style="margin-top: 10px;" type="primary">确定</t-button>
+        <t-button style="margin-top: 10px;" type="delete">确定</t-button>
     </div>
 </template>
 
